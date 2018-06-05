@@ -7,6 +7,31 @@ title: Marketplace
 ===
 
 
+<div class="clearfix"></div>
+<h2><i class="fa fa-server fa-fw"></i>
+Apps developed by our business network</h2>
+
+<br>
+
+<div class="row">
+	{% for post in site.tags.product %}
+		{% if post.categories contains 'apps' %}
+		<div class="col-sm-6 col-md-4">
+		    <div class="thumbnail">
+		      <img src="img/industries/{{post.industry}}.jpg" alt="{{post.industry}}">
+		      <div class="caption">
+		        <h3>{{ post.title }}</h3>
+		        <p>{{ post.brief }}</p>
+		        <p><i class="fa fa-play-circle fa-fw"></i>	<a href="../{{ post.info }}">{{ post.title }}</a></p>
+		      </div>
+		    </div>
+	    </div>
+		{% endif %}
+	{% endfor %}
+</div>
+
+<hr>
+
 <div class="col-lg-6 heading-lead">
 	<br>
     <div class="clearfix"></div>
@@ -36,3 +61,5 @@ title: Marketplace
     	<li><a href="products/distribution.html">Wholesale Distribution</a></li>
     </ul>
 </div>
+
+<br><br><br><br>

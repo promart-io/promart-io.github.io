@@ -30,7 +30,7 @@ a {
 }
 
 a:hover {
-    color: #888;
+    color: #ef6e0a;
 }
 
 .grid-home {
@@ -283,10 +283,14 @@ p.copyright {
 }
 
 .navbar-default .navbar-brand {
-    color: rgb(255, 142, 10);
+    color: #ff8e0a;
     font-weight: 700;
     font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
     font-size: 2rem;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #e67a00;
 }
 
 .navbar-default .navbar-nav li a {
@@ -298,9 +302,9 @@ p.copyright {
 }
 
 .navbar-default .navbar-nav li a:hover {
-    color: rgb(255, 142, 10) !important;
-    background: rgb(238, 238, 238) !important;
-    border-color: rgb(238, 238, 238) !important;
+    color: #ff8e0a !important;
+    background: #eee !important;
+    border-color: #eee !important;
 }
 
 .lead {
@@ -374,3 +378,39 @@ blockquote {
 	font-family: serif;
 }
 
+tbody {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+table tr th, table tr td {
+  font-size: 1em;
+  border: 1px solid #CCC;
+  margin: 0;
+  padding: 0.5em 1em; }
+
+table {
+  margin: 1.2em 0;
+  padding: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 1em;
+  font: inherit;
+  border: 0; }
+  table tr {
+    border: 0;
+    border-top: 1px solid #CCC;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr :nth-child(2n) {
+      background-color: #F8F8F8; }
+    table tr th {
+      font-weight: bold;
+      background-color: #F0F0F0; }
+    table tr td[align="right"] {
+      text-align: right; }
+    table tr td[align="left"] {
+      text-align: left; }
+    table tr td[align="center"] {
+      text-align: center; }
