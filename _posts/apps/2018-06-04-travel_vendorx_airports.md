@@ -4,8 +4,9 @@ category: apps
 industry: travel
 title: Airports Services
 icon: gear
-author: nedelcho.delchev
+vendor: vendorx
 repository: https://github.com/dirigiblelabs/travel_airports_services
+version: 1.0
 tags:
 - product
 - travel
@@ -20,6 +21,8 @@ info: apps/2018/06/04/travel_vendorx_airports.html
 {{ page.title }}
 ---
 
+{% assign vendor = site.data.vendors[page.vendor] %}
+
 ### Plans
 
 <div class="row">
@@ -28,12 +31,12 @@ info: apps/2018/06/04/travel_vendorx_airports.html
             <img src="/img/plans/basic.jpg" alt="Basic">
             <div class="caption">
                 <h4 class="pull-right">$24.99</h4>
-                <h4><a href="#">Basic Plan</a>
+                <h4><a href="#">Basic</a>
                 </h4>
-                <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
+                <p>This is an example how the real basic plan can look like. Describe the support obligations that you promise here.</p>
             </div>
             <div class="ratings">
-                <p class="pull-right">15 reviews</p>
+                <p class="pull-right"><img src="{{vendor.logo}}" height="20px"></p>
                 <p>
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -51,10 +54,10 @@ info: apps/2018/06/04/travel_vendorx_airports.html
                 <h4 class="pull-right">$64.99</h4>
                 <h4><a href="#">Professional</a>
                 </h4>
-                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>This is an example how the real professional plan can look like. Describe the support obligations that you promise here.</p>
             </div>
             <div class="ratings">
-                <p class="pull-right">12 reviews</p>
+                <p class="pull-right"><img src="{{vendor.logo}}" height="20px"></p>
                 <p>
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -72,10 +75,10 @@ info: apps/2018/06/04/travel_vendorx_airports.html
                 <h4 class="pull-right">$74.99</h4>
                 <h4><a href="#">Enterprise</a>
                 </h4>
-                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>This is an example how the real enterprise plan can look like. Describe the support obligations that you promise here.</p>
             </div>
             <div class="ratings">
-                <p class="pull-right">31 reviews</p>
+                <p class="pull-right"><img src="{{vendor.logo}}" height="20px"></p>
                 <p>
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -126,13 +129,10 @@ Sample entries:
 
 #### General
 
-{% assign developer = site.data.developers[page.author] %}
-
 ------------ | -----------
-Author     | {{developer.name}}
+Vendor     | {{vendor.name}}
 Repository | {{page.repository}}
 License    | [Eclipse Public License - v 1.0](https://www.eclipse.org/legal/epl-v10.html)
-Version    | -
-Download   | -
+Version    | {{page.version}}
 
 <br><br>
