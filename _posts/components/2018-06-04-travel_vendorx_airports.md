@@ -1,28 +1,23 @@
 ---
-layout: product
-category: apps
+layout: component
+category: components
 industry: travel
-name: travel_vendorx_airports
 title: Airports Services
 icon: gear
 vendor: vendorx
+author: nedelcho.delchev
+repository: https://github.com/promart-io/vendorx-airports/tree/master/vendorx_airports
 version: 1.0
 license: https://www.eclipse.org/legal/epl-v10.html
 tags:
-- product
+- component
 - travel
 - services
 - master
 - library
 brief: Contains the RESTful services and simple web based user interface about airports - name, codes, coordinates, etc. available at openflights.org
 git: https://github.com/promart-io/vendorx-airports/tree/master/vendorx_airports.git
-location: /apps/2018/06/04/travel_vendorx_airports.html
-plan_basic_price: $24.99
-plan_basic_info: This is an example how the real basic plan can look like. Describe the support obligations that you promise here
-plan_professional_price: $64.99
-plan_professional_info: This is an example how the real professional plan can look like. Describe the support obligations that you promise here
-plan_enterprise_price: $74.99
-plan_enterprise_info: This is an example how the real enterprise plan can look like. Describe the support obligations that you promise here
+location: /components/2018/06/04/travel_vendorx_airports.html
 ---
 
 {{ page.title }}
@@ -62,4 +57,3 @@ Sample entries:
 </div>
 
 <br><br>
-

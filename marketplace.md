@@ -24,7 +24,7 @@ Apps developed by our business network</h2>
 		        <p>{{ post.brief }}</p>
 		        {% assign vendor = site.data.vendors[post.vendor] %}
 		        <p class="pull-right"><img src="{{vendor.logo}}" height="20px"></p>
-		        <p><i class="fa fa-play-circle fa-fw"></i>	<a href="../{{ post.info }}">{{ post.title }}</a></p>
+		        <p><i class="fa fa-play-circle fa-fw"></i>	<a href="{{ post.location }}">{{ post.title }}</a></p>
 		      </div>
 		    </div>
 	    </div>

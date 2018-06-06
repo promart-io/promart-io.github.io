@@ -25,4 +25,11 @@ defaults:
     values:
       layout: product
       category: apps
+  -
+    scope:
+      path: components
+      type: blogs
+    values:
+      layout: component
+      category: components
  

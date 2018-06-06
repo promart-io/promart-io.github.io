@@ -62,7 +62,8 @@ footer .btn-primary {
 }
 
 footer .btn-primary:hover {
-	background-color: white;
+	background-color: #eee;
+	border-color: #ff8e0a;
     color: #ff8e0a;
 }
 
@@ -414,3 +415,15 @@ table {
       text-align: left; }
     table tr td[align="center"] {
       text-align: center; }
+
+.price-header {
+	background-color: #e67a00;
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+    padding: 1em 0em;
+    text-align: center;
+}
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
