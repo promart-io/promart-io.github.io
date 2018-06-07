@@ -45,13 +45,16 @@ a:hover {
     background-color: #ff8e0a;
     color: #454545;
 }
-
 .btn-primary {
     color: #f7fafd;
     background-color: #203446;
     border: 1px solid ##203446;
 }
 
+footer {
+	background-color: #ff8e0a;
+	padding: 50px 0;
+}
 footer .btn-primary {
 	background-color: white;
     color: #ff8e0a;
@@ -60,21 +63,20 @@ footer .btn-primary {
     border-color: white;
     border-image: initial;
 }
-
 footer .btn-primary:hover {
 	background-color: #eee;
 	border-color: #ff8e0a;
     color: #ff8e0a;
 }
-
 footer a {
 	color: white;
 }
-
+footer a:hover {
+	color: #eee;
+}
 footer h4 {
 	color: #eeeeee;	
 }
-
 footer li {
 	color: #ff8e0a 
 }
@@ -234,11 +236,6 @@ src: url(�webfont.eot?#iefix�) format(�embedded-opentype�),
 	ul.banner-social-buttons > li:last-child {
 		margin-bottom: 0;
 	}	
-}
-
-footer {
-	background-color: #ff8e0a;
-	padding: 50px 0;
 }
 
 p.copyright {

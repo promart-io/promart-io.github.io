@@ -23,8 +23,6 @@ location: /components/2018/06/04/travel_vendorx_airports.html
 {{ page.title }}
 ---
 
-{% assign vendor = site.data.vendors[page.vendor] %}
-
 ### Description
 
 As of January 2012, the OpenFlights Airports Database contains 6977 airports spanning the globe, as shown in the map above. Each entry contains the following information:

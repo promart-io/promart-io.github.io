@@ -94,7 +94,7 @@ Your information, including your personal data, may be shared with other partici
 CHOICE/OPTOUT
 We communicate with users who subscribe to our services on a regular basis via email, and we may also communicate by phone to resolve customer complaints or investigate suspicious transactions. We may use your email address to confirm your opening of an account, to send you notice of payments or transactions, to send you information about changes to our products and services, and to send notices and other disclosures as required by law. Generally, users cannot opt out of these communications, but they will be primarily informational in nature rather than promotional.
 
-SAP provides you the opportunity to exercise an opt-out choice if you do not want to receive other types of communication from us such as emails or updates from us regarding new services and products offered on this website or if you do not want us to share your personal information with third parties. The opt-out choice may be exercised by unsubscribing at info@promart.io
+SAP provides you the opportunity to exercise an opt-out choice if you do not want to receive other types of communication from us such as emails or updates from us regarding new services and products offered on this website or if you do not want us to share your personal information with third parties. The opt-out choice may be exercised by unsubscribing at office.promart.io@gmail.com
 
 DATA RETENTION
 SAP will not retain your personal data longer than is necessary to fulfill the purposes for which it was collected or as required by applicable laws or regulations.
@@ -105,6 +105,6 @@ SAP does not knowingly collect personal data from children under the age of 13. 
 
 
 INQUIRIES, ACCESS AND UPDATING YOUR PERSONAL DATA
-SAP needs your help in keeping the personal data you have shared with us accurate and up to date. If you are a registered user, you may make these updates yourself online via http://www.promart.io/. You may also make these updates or other changes by sending an email to info@promart.io.
+SAP needs your help in keeping the personal data you have shared with us accurate and up to date. If you are a registered user, you may make these updates yourself online via http://www.promart.io/. You may also make these updates or other changes by sending an email to office.promart.io@gmail.com.
 
-If you have any other questions about this Privacy Policy or if you wish to inspect the information we hold about you, please contact info@promart.io.
+If you have any other questions about this Privacy Policy or if you wish to inspect the information we hold about you, please contact office.promart.io@gmail.com.

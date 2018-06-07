@@ -9,7 +9,7 @@ html {
   height: 100%; }
 
 body {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif; }
+  -- font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif; }
 
 hr {
   max-width: 50px;
@@ -231,3 +231,48 @@ header.masthead {
     background-color: #ee4b28 !important; }
   .btn-primary:active, .btn-primary:focus {
     box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important; }
+
+
+
+
+
+footer {
+	background-color: #ff8e0a;
+	padding: 50px 0;
+	font-size: 0.9em !important;
+}
+footer .btn-primary {
+	background-color: white;
+    color: #ff8e0a;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-image: initial;
+}
+footer .btn-primary:hover {
+	background-color: #eee;
+	border-color: #ff8e0a;
+    color: #ff8e0a;
+}
+footer a {
+	color: white;
+}
+footer a:hover {
+	color: #eee;
+}
+footer h4 {
+	color: #eeeeee;	
+}
+footer li {
+	color: #ff8e0a 
+}
+.section-heading-spacer {
+	border-top: 3px solid #e7e7e7;
+	width: 200px;
+	float: left;
+}
+p.copyright {
+	margin: 15px 0 0;
+	font-size: 0.8em !important;
+	color: #eee !important;
+}
