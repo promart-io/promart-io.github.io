@@ -18,6 +18,7 @@ There are separate sets of tools for the different roles proivided by the platfo
 * [Solution Composer](/tools-solution-composer.html) - the tool where the Vendors can compose a set of modules from the Component Registry to a Solutions for offering to Customers
 * [Marketplace](/marketplace.html) - the products catalog reflecting the actual set of available Solutions built by the Vendors and offered to the end Customers
 * [Seller Dashboard](/tools-seller-dashboard.html) - a micro-CRM toolkit, where the Sales Representative can manage the direct sales
+* [Collaboration Board](/tools-collaboration-board.html) - a set of collaboration tools available for all the roles within the Ecosystem
 
 The are lots of benefits for you to join the ProMART business network. See what does it mean to become:
 * [Developer](/become-developer.html)
