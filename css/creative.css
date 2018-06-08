@@ -9,7 +9,8 @@ html {
   height: 100%; }
 
 body {
-  -- font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif; }
+  /*font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;*/
+}
 
 hr {
   max-width: 50px;
@@ -168,7 +169,7 @@ header.masthead {
 .portfolio-box {
   position: relative;
   display: block;
-  max-width: 650px;
+  max-width: 1050px;
   margin: 0 auto;
   cursor: pointer; }
   .portfolio-box .portfolio-box-caption {
