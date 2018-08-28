@@ -14,6 +14,10 @@ marketpace.config(function($routeProvider) {
 			templateUrl : 'views/marketplace/apps.html',
 			controller  : 'RecentAppsController'
 		})
+		.when('/apps/:appId', {
+			templateUrl : 'views/marketplace/app.html',
+			controller  : 'AppController'
+		})
 		.otherwise({
 			redirectTo: '/'
 		});
