@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="marketplace">
 <head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120521332-1"></script>
@@ -109,12 +109,12 @@
 			</div>
 		</div>
 	</div>
-    <!-- /.intro-header -->
+	<!-- /.intro-header -->
 
 	<div class="clearfix"></div>
 	<h2><i class="fa fa-server fa-fw"></i>Apps developed by our business network</h2>
 	<br>
-	<!-- PlaceHolder -->
+	<div ng-view></div>
 	<br>
 	<br>
 	<br>
@@ -192,5 +192,14 @@
 
 	<link href="/css/gdpr.css" rel="stylesheet">
 	<script src="/js/bootstrap.js"></script>
+	
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-route.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-resource.min.js"></script>
+
+	<script type="text/javascript" src="js/controllers/main.js"></script>
+	<script type="text/javascript" src="js/controllers/marketplace/apps/all.js"></script>
+	<script type="text/javascript" src="js/controllers/marketplace/apps/featured.js"></script>
+	<script type="text/javascript" src="js/controllers/marketplace/apps/recent.js"></script>
 </body>
 </html>
