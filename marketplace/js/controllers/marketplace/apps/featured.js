@@ -3,7 +3,7 @@ angular.module('marketplace')
 
 	$scope.activeTab = 'featuredApps';
 
-	var api = '/services/v3/js/marketplace/api/apps.js';
+	var api = 'https://ide.ingress.dev.promart.shoot.canary.k8s-hana.ondemand.com/services/v3/js/marketplace/api/apps.js';
 
 	function loadApps() {
 		$http.get(api + '/featured')
