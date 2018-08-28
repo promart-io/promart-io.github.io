@@ -31,69 +31,53 @@
 
 <body itemscope itemtype="http://schema.org/SoftwareApplication">
 	<nav class="bg-dark fixed-top navbar navbar-dark navbar-default" role="navigation">
-		<div class="container">
+		<a class="container navbar-brand" href="/">ProMART</a><button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-main-collapse" aria-expanded="true">
+					<i class="navbar-toggler-icon"></i>
+				</button><div class="container">
 			<div class="navbar-header page-scroll">
-				<button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-main-collapse">
-					<i class="fa fa-bars"></i>
-				</button>
-				<a class="navbar-brand" href="/#home">ProMART</a>
+				
+				
 			</div>
-
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-				<ul class="nav navbar-nav">
-					<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-					<li class="hidden">
-						<a href="/index.html#home">Home</a>
+			
+			<div class="navbar-collapse collapse navbar-main-collapse" id="navbarTogglerDemo02" style="">
+				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+					<li class="nav-item active">
+						<a class="nav-link" href="/">Home</a>
 					</li>
-					<li class="page-scroll">
-						<a itemprop="url" href="/marketplace/">Products</a>
+					<li class="nav-item">
+						<a class="nav-link" href="/marketplace/">Products</a>
 					</li>
-					<li class="page-scroll">
-						<ul class="nav navbar-nav navbar-right">
-							<li class="dropdown" style="background-color: transparent">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="background-color: transparent">Partners <b class="caret"></b></a>
-								<ul class="dropdown-menu">
-									<li><a href="/become-partner.html" target="_blank">Become a Partner</a></li>
-									<li><a href="/become-developer.html" target="_blank" >Join as a Developer</a></li>
-									<li><a href="/become-vendor.html" target="_blank">Join as a Vendor</a></li>
-									<li><a href="/become-seller.html" target="_blank">Join as a Sales Representative</a></li>
-								</ul>
-							</li>
-						</ul>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#/" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Partners</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="/become-partner.html" target="_blank">Become a Partner</a>
+							<a class="dropdown-item" href="/become-developer.html" target="_blank">Join as a Developer</a>
+							<a class="dropdown-item" href="/become-vendor.html" target="_blank">Join as a Vendor</a>
+							<a class="dropdown-item" href="/become-seller.html" target="_blank">Join as a Sales Representative</a>
+						</div>
 					</li>
-
-					<li class="page-scroll">
-						<ul class="nav navbar-nav navbar-right">
-							<li class="dropdown" style="background-color: transparent">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="background-color: transparent">Tools <b class="caret"></b></a>
-								<ul class="dropdown-menu">
-									<li><a href="/tools-development-environment.html" target="_blank">Development Environment</a></li>
-									<li><a href="/tools-component-registry.html" target="_blank">Component Registry</a></li>
-									<li><a href="/tools-solution-composer.html" target="_blank">Solution Composer</a></li>
-									<li><a href="/tools-seller-dashboard.html" target="_blank">Seller Dashboard</a></li>
-									<li><a href="/tools-collaboration-board.html" target="_blank">Collaboration Board</a></li>
-								</ul>
-							</li>
-						</ul>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#/" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tools</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="/tools-development-environment.html" target="_blank">Development Environment</a>
+							<a class="dropdown-item" href="/tools-component-registry.html" target="_blank">Component Registry</a>
+							<a class="dropdown-item" href="/tools-solution-composer.html" target="_blank">Solution Composer</a>
+							<a class="dropdown-item" href="/tools-seller-dashboard.html" target="_blank">Seller Dashboard</a>
+							<a class="dropdown-item" href="/tools-collaboration-board.html" target="_blank">Collaboration Board</a>
+						</div>
 					</li>
-
-					<li class="page-scroll">
-						<ul class="nav navbar-nav navbar-right">
-							<li class="dropdown" style="background-color: transparent">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="background-color: transparent">Community <b class="caret"></b></a>
-								<ul class="dropdown-menu">
-									<li><a href="/news.html" target="_blank">Newsletter</a></li>
-									<li><a href="/blogs.html" target="_blank">Blogs</a></li>
-									<li><a href="https://github.com/promart-io/operations-forum/issues" target="_blank">Forum</a></li>
-									<li><a href="https://github.com/promart-io/operations-wiki/wiki" target="_blank">Wiki</a></li>
-								</ul>
-							</li>
-						</ul>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#/" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Community</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="/news.html" target="_blank">Newsletter</a>
+							<a class="dropdown-item" href="/blogs.html" target="_blank">Blogs</a>
+							<a class="dropdown-item" href="/tools-solution-composer.html" target="_blank">Forum</a>
+							<a class="dropdown-item" href="https://github.com/promart-io/operations-forum/issues" target="_blank">Wiki</a>
+							<a class="dropdown-item" href="https://github.com/promart-io/operations-wiki/wiki" target="_blank">Collaboration Board</a>
+						</div>
 					</li>
 				</ul>
-			</div>
-			<!-- /.navbar-collapse -->
+			  </div>
 		</div>
 		<!-- /.container -->
 	</nav>
