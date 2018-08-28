@@ -1,11 +1,128 @@
----
-layout: default
-title: Marketplace
----
+<!DOCTYPE html>
+<html lang="en">
 
-{{ page.title }}
-===
+<head>
 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120521332-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'UA-120521332-1');
+	</script>
+ 
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="dirigible.io">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>ProMART | The Open Source Business Applications Market</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Google Web Font -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+    <!-- Add custom CSS here -->
+    <link href="/css/default.css" rel="stylesheet">
+
+</head>
+
+<body itemscope itemtype="http://schema.org/SoftwareApplication">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="{{ site.url }}/index.html#home">
+                    ProMART
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="index.html#home">Home</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a itemprop="url" href="/marketplace.html">Products</a>
+                    </li>
+                    <li class="page-scroll">
+                        <ul class="nav navbar-nav navbar-right">
+				          <li class="dropdown" style="background-color: transparent">
+				          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="background-color: transparent">Partners <b class="caret"></b></a>
+				          	<ul class="dropdown-menu">
+				          		<li><a href="/become-partner.html" target="_blank">Become a Partner</a></li>
+				                <li><a href="/become-developer.html" target="_blank" >Join as a Developer</a></li>
+				                <li><a href="/become-vendor.html" target="_blank">Join as a Vendor</a></li>
+				                <li><a href="/become-seller.html" target="_blank">Join as a Sales Representative</a></li>
+				              </ul>
+				          </li>
+				        </ul>
+                    </li>
+                    
+                    <li class="page-scroll">
+                        <ul class="nav navbar-nav navbar-right">
+				          <li class="dropdown" style="background-color: transparent">
+				          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="background-color: transparent">Tools <b class="caret"></b></a>
+				          	<ul class="dropdown-menu">
+				                <li><a href="/tools-development-environment.html" target="_blank">Development Environment</a></li>
+				                <li><a href="/tools-component-registry.html" target="_blank">Component Registry</a></li>
+				                <li><a href="/tools-solution-composer.html" target="_blank">Solution Composer</a></li>
+				                <li><a href="/tools-seller-dashboard.html" target="_blank">Seller Dashboard</a></li>
+				                <li><a href="/tools-collaboration-board.html" target="_blank">Collaboration Board</a></li>
+				              </ul>
+				          </li>
+				        </ul>
+                    </li>
+
+					<li class="page-scroll">
+	                    <ul class="nav navbar-nav navbar-right">
+				          <li class="dropdown" style="background-color: transparent">
+				          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="background-color: transparent">Community <b class="caret"></b></a>
+				          	<ul class="dropdown-menu">
+				                <li><a href="/news.html" target="_blank">Newsletter</a></li>
+				                <li><a href="/blogs.html" target="_blank">Blogs</a></li>
+				                <li><a href="https://github.com/promart-io/operations-forum/issues" target="_blank">Forum</a></li>
+				                <li><a href="https://github.com/promart-io/operations-wiki/wiki" target="_blank">Wiki</a></li>
+				              </ul>
+				          </li>
+				        </ul>
+				    </li>
+                </ul>
+            </div>
+
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <div class="intro-header grid" id="home">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message intro-messager pull-left">
+                        <h3 itemprop="name"> <i class="fa fa-tasks"></i> ProMART - The Open Source Business Applications Market</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- /.intro-header -->
 
 <div class="clearfix"></div>
 <h2><i class="fa fa-server fa-fw"></i>
@@ -65,3 +182,81 @@ Apps developed by our business network</h2>
 </div>
 
 <br><br><br><br>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+					        <div class="col-lg-4 heading-lead page-scroll">
+								<hr class="section-heading-spacer">
+				                <div class="clearfix"></div>
+					            <h4>Partners</h4>
+					            <ul>
+					                <li><a href="/overview.html" target="_blank" >Overview</a></li>
+					                <li><a href="/become-seller.html" target="_blank" >Become a Sales Representative</a></li>
+					                <li><a href="/become-vendor.html" target="_blank" >Become a Solution Vendor</a></li>
+					                <li><a href="/become-developer.html" target="_blank" >Join as a Developer</a></li>
+					                <li><a href="mailto:office.promart.io@gmail.com">Contact us</a></li>
+					            </ul>
+					        </div>
+					        <div class="col-lg-4 heading-lead">
+								<hr class="section-heading-spacer">
+				                <div class="clearfix"></div>
+					            <h4>Legal</h4>
+					            <ul>
+					            	<li><a href="/legal-privacy-policy.html">Privacy Policy</a></li>
+					            	<li><a href="/legal-participation-agreement.html">Participation Agreement</a></li>
+									<li><a href="/legal-vendor-terms.html">Terms of Use</a></li>
+									<li><a href="/legal-ecommunications-policy.html">e-Communications Policy</a></li>
+									<li><a href="//www.sap.com/corporate/en/legal/copyright.html">Copyright Agent</a></li>
+									<li><a href="//www.sap.com/corporate/en/legal/trademark.html">Trademark</a></li>
+									<li><a href="//www.eclipse.org/legal/epl-2.0/">Eclipse Public License</a></li>
+								</ul>
+					        </div>
+					        <div class="col-lg-4 heading-lead">
+								<hr class="section-heading-spacer">
+					            <div class="clearfix"></div>
+						        	<h4>Community</h4>
+									<ul>
+						                <li><a href="/news.html" target="_blank">Newsletter</a></li>
+						                <li><a href="/blogs.html" target="_blank">Blogs</a></li>
+						                <li><a href="https://github.com/promart-io/operations-forum/issues" target="_blank">Forum</a></li>
+						                <li><a href="https://github.com/promart-io/operations-wiki/wiki" target="_blank">Wiki</a></li>
+						            </ul>
+						        </div>
+						    </div>
+						    <div class="col-lg-12">
+			                    
+			                    <p class="copyright text-muted small">Copyright &copy; 2018 ProMART by SAP. All Rights Reserved. SAP is a registered trademark of the SAP SE.</p>
+			                </div>	    
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- JavaScript -->
+        <script src="/js/jquery-1.10.2.js"></script>
+        <script type="text/javascript" src="/gdpr/jquery.ihavecookies.min.js"></script>
+	    <script type="text/javascript">
+	    $(document).ready(function() {
+	        $('body').ihavecookies({
+	            title: 'Accept Cookies & Privacy Policy?',
+	            message: 'This website uses cookies to ensure you get the best experience on our website',
+	            delay: 2000,
+	            expires: 30,
+	            link: 'legal-privacy-policy.html',
+	            onAccept: function(){
+	            	location.reload();
+	            },
+	            uncheckBoxes: true
+	        });
+	    });
+	    </script>
+	    
+	    <link href="/css/gdpr.css" rel="stylesheet">
+	    
+        <script src="/js/bootstrap.js"></script>
+
+    </body>
+</html>
