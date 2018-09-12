@@ -3,7 +3,7 @@ angular.module('marketplace')
 
 	$scope.activeTab = 'recentApps';
 
-	var api = 'https://store.ingress.dev.promart.shoot.canary.k8s-hana.ondemand.com/services/v3/js/marketplace/api/Products.js';
+	var api = 'https://platform.ingress.dev.promart.shoot.canary.k8s-hana.ondemand.com/services/v3/js/marketplace/api/Products.js';
 
 	function loadApps() {
 		$http.get(api + '/recent')
