@@ -1,0 +1,24 @@
+---
+layout: industry
+title: Automotive Applications
+industry: automotive
+---
+
+	<p>The global automotive industry consists of companies and organizations specialized in designing, manufacturing, and marketing of cars, buses, and other types of motor vehicles. Here you can find applications related to this industry.
+	</p>
+	<br>
+	<div>
+		<div>
+			{% for post in site.tags.automotive %}
+				{% if post.categories contains 'apps' %}
+					<div>
+						<p>
+							<div class="col-sm-11">
+								<p><i class="fa fa-{{ post.icon }} fa-fw"></i>	<a href="../{{ post.info }}">{{ post.title }}</a> - {{ post.brief }}...</p>
+							</div>
+						</p>
+					</div>
+				{% endif %}
+			{% endfor %}
+		</div>
+	</div>

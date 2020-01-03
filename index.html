@@ -1,159 +1,370 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="index" ng-controller="IndexController">
+<html lang="en">
 
-<head>
+  <head>
+  
+  
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120521332-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'UA-120521332-1');
+	</script>
+  
 
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>{{data.BrandName}}</title>
+    <title>ProMART - The Open Source Business Applications Market</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.css" rel="stylesheet">
     
-    <!-- Font Awesome -->
-    <link type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+  </head>
 
-    <!-- Custom CSS -->
-    <link href="css/shop-homepage.css" rel="stylesheet">
-    <link href="css/modern-business.css" rel="stylesheet">
+  <body id="page-top">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
-</head>
-
-<body>
-
-    <div ng-include="'tmpl/nav.tmpl.html'"></div>
-
-
-    <!-- Header Carousel -->
-    <header id="myCarousel" class="carousel slide">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li ng-repeat="next in slides" data-target="#myCarousel" data-slide-to="{{$index}}" class="{{$index == 0 ? 'active' : ''}}"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div ng-repeat="next in slides" class="item {{$index == 0 ? 'active' : ''}}">
-                <div class="fill" style="background-image:url('{{next.Image}}');"></div>
-                <div class="carousel-caption">
-                    <h2>{{next.Caption}}</h2>
-                </div>
-            </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">ProMART</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#what">What</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#who">Who</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#where">Where</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
+      </div>
+    </nav>
 
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
+    <header class="masthead text-center text-white d-flex">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h1 class="text-uppercase">
+              <strong>Develop Operate Market</strong>
+            </h1>
+            <hr>
+          </div>
+          <div class="col-lg-8 mx-auto">
+            <p class="text-faded mb-5">platform for developers, software vendors and customers to collaborate, define, develop, run, operate and sell their solutions</p>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#what">Find Out More</a>
+          </div>
+        </div>
+      </div>
     </header>
 
-    <!-- Page Content -->
-    <div class="container">
-    
-        <div class="col-lg-12">
-            <h1 class="page-header">
-                {{data.WelcomeMessage}}
-            </h1>
-        </div>
-            
-        <!-- Features Section -->
+    <section class="bg-primary" id="what">
+      <div class="container">
         <div class="row">
-            
-            <section class="features-icons bg-light text-center">
-		      <div class="container">
-		        <div class="row">
-		          <div class="col-lg-4" ng-repeat="next in features">
-		            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-		              <div class="features-icons-icon d-flex">
-		                <i class="fa fa-{{next.Image}} m-auto text-primary" style="color: {{next.Color}}"></i>
-		              </div>
-		              <h3>{{next.Name}}</h3>
-		              <p class="lead mb-0">{{next.Description}}</p>
-		            </div>
-		          </div>
-		        </div>
-		      </div>
-		    </section>
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading text-white">What do we provide?</h2>
+            <hr class="light my-4">
+            <p class="text-faded mb-4">
+              ProMART offers an unique platform for collaboration between the producers and consumers of open source software to make it a profitable and sustainable business. 
+            </p>
+            <a class="btn btn-light btn-xl js-scroll-trigger" href="#who">Get Started!</a>
+          </div>
         </div>
-        <!-- /.row -->
+      </div>
+    </section>
 
-        <!-- Promotions Section -->
+    <section id="who">
+      <div class="container">
         <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">{{data.PromotionsHeading}}</h2>
-            </div>
-            <div class="col-md-{{12 / data.PromotionsPerLine}} col-sm-{{12 / data.PromotionsPerLine}}" ng-repeat="next in promotions">
-                <a href="{{next.Link}}">
-                    <img class="img-responsive img-portfolio img-hover" src="{{next.Image}}" alt="">
-                </a>
-            </div>
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">To whom it matters?</h2>
+            <hr class="my-4">
+          </div>
         </div>
-        <!-- /.row -->
-        
-        <!-- Clearance Section -->
+      </div>
+      <div class="container">
         <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">{{data.ClearanceHeading}}</h2>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-shopping-basket text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">For Customers</h3>
+              <p class="text-muted mb-0">If you are looking for a modern, extendable and secure cloud applications.</p>
             </div>
-            <div class="col-md-{{12 / data.ClearancePerLine}} col-sm-{{12 / data.ClearancePerLine}}" ng-repeat="next in clearance">
-                <a href="{{next.Link}}">
-                    <img class="img-responsive img-portfolio img-hover" src="{{next.Image}}" alt="">
-                </a>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-wrench text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">For Developers</h3>
+              <p class="text-muted mb-0">If you need a single cloud platform providing powerful tooling, scallable infrastructure and huge number of reusable components (<a href='/become-developer.html'>more...</a>)</p>
             </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-gift text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">For Vendors</h3>
+              <p class="text-muted mb-0">If you want to build solutions tailored for specific customer's needs (<a href='/become-vendor.html'>more...</a>)</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-dollar text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">For Sellers</h3>
+              <p class="text-muted mb-0">If you are a sales representative who wants to expand own products portfolio (<a href='/become-seller.html'>more...</a>)</p>
+            </div>
+          </div>
         </div>
-        <!-- /.row -->
+      </div>
+    </section>
 
-        <hr>
-
-        <!-- Call to Action Section -->
-        <div class="well special">
-            <div class="row">
-                <div class="col-md-8">
-                    <p>{{data.SpecialRequestText}}</p>
+    <section class="p-0" id="where">
+      <div class="container-fluid p-0">
+        <div class="row no-gutters popup-gallery">
+          <div class="col-lg-4 col-sm-6">
+            <div class="portfolio-box" onclick="location='marketplace.html'">
+              <img class="img-fluid" src="img/portfolio/thumbnails/marketplace.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Customers
+                  </div>
+                  <div class="project-name">
+                    Marketplace
+                  </div>
                 </div>
-                <div class="col-md-4">
-                    <a class="btn btn-lg btn-default btn-block" href="contact.html">Contact Us</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" onclick="location='/tools-solution-composer.html'">
+              <img class="img-fluid" src="img/portfolio/thumbnails/solution-composer.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Vendors
+                  </div>
+                  <div class="project-name">
+                    Solution Composer
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" onclick="location='/tools-seller-dashboard.html'">
+              <img class="img-fluid" src="img/portfolio/thumbnails/seller-dashboard.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Sellers
+                  </div>
+                  <div class="project-name">
+                    Seller Dashboard
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" onclick="location='/tools-development-environment.html'">
+              <img class="img-fluid" src="img/portfolio/thumbnails/development-environment.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Developers
+                  </div>
+                  <div class="project-name">
+                    Development Environment
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" onclick="location='/tools-component-registry.html'">
+              <img class="img-fluid" src="img/portfolio/thumbnails/component-registry.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Builders
+                  </div>
+                  <div class="project-name">
+                    Component Registry
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" onclick="location='/tools-collaboration-board.html'">
+              <img class="img-fluid" src="img/portfolio/thumbnails/collaboration-board.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Ecosystem
+                  </div>
+                  <div class="project-name">
+                    Collaboration Board
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-dark text-white">
+      <div class="container text-center">
+        <h2 class="mb-4">Free Registration!</h2>
+        <a class="btn btn-light btn-xl sr-button" href="https://github.com/promart-io/promart-requests/issues">Join Now!</a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">Let's Get In Touch!</h2>
+            <hr class="my-4">
+            <p class="mb-5">Ready to start your next project with us? That's great! Post a registration request or ask a question and we will get back to you as soon as possible!</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 mr-auto text-center">
+            <i class="fa fa-envelope-o fa-3x mb-3 text-primary sr-contact"></i>
+            <p>
+              <a href="mailto:office.promart.io@gmail.com">office.promart.io@gmail.com</a>
+            </p>
+          </div>
+          <div class="col-lg-4 ml-auto text-center">
+            <i class="fa fa-user-plus fa-3x mb-3 text-primary sr-contact"></i>
+            <p><a href="https://github.com/promart-io/promart-requests/issues">Post a registration request</a></p>
+          </div>
+          <div class="col-lg-4 mr-auto text-center">
+            <i class="fa fa-question fa-3x mb-3 text-primary sr-contact"></i>
+            <p>
+              <a href="https://github.com/promart-io/promart-forum/issues">Ask a question</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.js"></script>
+
+    
+
+           <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                  <div class="col-lg-4 heading-lead page-scroll">
+                <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                      <h4>Partners</h4>
+                      <ul>
+                          <li><a href="/overview.html" target="_blank" >Overview</a></li>
+                          <li><a href="/become-seller.html" target="_blank" >Become a Sales Representative</a></li>
+                          <li><a href="/become-vendor.html" target="_blank" >Become a Solution Vendor</a></li>
+                          <li><a href="/become-developer.html" target="_blank" >Join as a Developer</a></li>
+                          <li><a href="mailto:office.promart.io@gmail.com">Contact us</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-lg-4 heading-lead">
+                <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                      <h4>Legal</h4>
+                      <ul>
+                        <li><a href="/legal-privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="/legal-participation-agreement.html">Participation Agreement</a></li>
+                  <li><a href="/legal-vendor-terms.html">Terms of Use</a></li>
+                  <li><a href="/legal-ecommunications-policy.html">e-Communications Policy</a></li>
+                  <li><a href="//www.sap.com/corporate/en/legal/copyright.html">Copyright Agent</a></li>
+                  <li><a href="//www.sap.com/corporate/en/legal/trademark.html">Trademark</a></li>
+                  <li><a href="//www.eclipse.org/legal/epl-2.0/">Eclipse Public License</a></li>
+                </ul>
+                  </div>
+                  <div class="col-lg-4 heading-lead">
+                <hr class="section-heading-spacer">
+                      <div class="clearfix"></div>
+                      <h4>Community</h4>
+                  <ul>
+                            <li><a href="/news.html" target="_blank">Newsletter</a></li>
+                            <li><a href="/blogs.html" target="_blank">Blogs</a></li>
+                            <li><a href="https://github.com/promart-io/operations-forum/issues" target="_blank">Forum</a></li>
+                            <li><a href="https://github.com/promart-io/operations-wiki/wiki" target="_blank">Wiki</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                          
+                          <p class="copyright text-muted small">Copyright &copy; 2018 ProMART by SAP. All Rights Reserved. SAP is a registered trademark of the SAP SE.</p>
+                      </div>      
+                    </div>
                 </div>
             </div>
-        </div>
+        </footer>
 
-    </div>
-        
-    <div ng-include="'tmpl/footer.tmpl.html'"></div>
+        <!-- JavaScript -->
+        <script src="/js/jquery-1.10.2.js"></script>
+        <script type="text/javascript" src="/gdpr/jquery.ihavecookies.min.js"></script>
+	    <script type="text/javascript">
+	      $(document).ready(function() {
+	          $('body').ihavecookies({
+	              title: 'Accept Cookies & Privacy Policy?',
+	              message: 'This website uses cookies to ensure you get the best experience on our website',
+	              delay: 2000,
+	              expires: 30,
+	              link: 'legal-privacy-policy.html',
+	              onAccept: function(){
+	                location.reload();
+	              },
+	              uncheckBoxes: true
+	          });
+	      });
+	    </script>
+      
+        <link href="/css/gdpr.css" rel="stylesheet">
 
-    <!-- jQuery -->
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <!-- AngularJS -->
-	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
-	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-resource.min.js"></script>
-	
-	<!-- Script to Activate the Carousel -->
-    <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    });
-    </script>
-    
-    <script type="text/javascript" src="index.js"></script>
-	
-</body>
+  </body>
 
 </html>

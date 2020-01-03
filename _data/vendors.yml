@@ -1,0 +1,9 @@
+# vendors information
+
+vendorx:
+  name: VendorX
+  logo: /img/vendors/vendorx.png
+  address: 1 Street
+  contact: office@vendorx.com
+  description: Test Vendor
+
