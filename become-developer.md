@@ -12,9 +12,16 @@ By becoming a ProMART Developer you will get the following permissions and capab
 
 * Access to the high-productivity development environment. You can build your modules by using a set of rapid application development techniques (RAD) such as Entity Data Modeling with highly customizable Templates, low-code REST frameworks or just to add your custom modules;
 * Integrate your components with the Extensibility framework, which will make them ready for composing into solutions afterwards;
+* Manage workspaces at a central place accessible from everywhere;
+* Having the shortest development turn-around time;
+* Developing against the wide-ranging API covering a rich set of libraries
+* Focusing on the business application logic;
 * Be allowed to register your modules to the Component Registry;
 * Receive a fair share from the EcoTax;
 * Have access to all the collaboration tools;
+* Access to the list of the inquiries and offers from the customers, sellers, vendors
+* Have a flexible working time
+* Gaining reputation based on your knowledge and achievements
 
 To build a sustainable developers network where all the participants have an incentive to contribute and ability to support the available modules we decided to set-up the following rules:
 
